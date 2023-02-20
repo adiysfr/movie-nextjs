@@ -9,28 +9,5 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  res.status(200).json({ 
-    data: [
-      {
-        id: "1",
-        nama: "adi"
-      },
-      {
-        id: "2",
-        nama: "adi2"
-      },
-      {
-        id: "3",
-        nama: "adi3"
-      },
-      {
-        id: "4",
-        nama: "adi4"
-      },
-      {
-        id: "5",
-        nama: "adi5"
-      }
-    ] 
-  })
+  res.status(200).json({ name: 'John Doe'})
 }
