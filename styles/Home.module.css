@@ -1,10 +1,13 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 6rem;
+  padding: 2rem;
   min-height: 100vh;
+  background: url('https://img.freepik.com/free-photo/movie-background-collage_23-2149876028.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .description {
@@ -274,5 +277,59 @@
   }
   to {
     transform: rotate(0deg);
+  }
+}
+
+
+
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.button{
+  -webkit-animation: breathing 1s ease-out infinite normal;
+  animation: breathing 1s ease-out infinite normal;
+}
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
   }
 }
